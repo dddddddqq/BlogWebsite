@@ -1,0 +1,79 @@
+html{
+  box-sizing: border-box;
+  height: 100%;
+ 
+  }
+
+  *,
+  *::before,
+  *::after{
+     box-sizing: inherit;
+     margin: 0;
+     padding: 0; 
+  }
+
+
+
+      body {
+        font-family: 'Dosis', sans-serif;
+          height: 100%;
+          margin: 0;
+         background-color: #302E2E;
+      }
+
+      .top{
+        display: flex;
+        align-items: top;
+        align-items: center;
+        width: 100%;
+        height: 15%;
+        overflow:-moz-hidden-unscrollable;
+        position: relative;
+        background-image: linear-gradient(43deg, #fd5d35 0%, #fecdc2 46%, #aaaaaa 100%);
+        text-indent: 50px;
+        letter-spacing: 2px;
+        text-indent: 100px;
+        justify-content: center;
+        font-family: inherit;
+      }
+
+   
+      .title{
+        letter-spacing: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-family: inherit;
+        font-size: 40px;
+        white-space: pre;
+      }
+
+.items{
+  display:flex;
+  flex-direction: column;
+  background-color: #fecdc2;
+   border-radius: 12px;
+  width:95%;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.image{
+  padding-top: 20px;
+  padding-left: 20px;
+  align-items: left;
+display:flex;
+
+}
+
+.name{
+  align-items: left;
+  justify-content: left;
+  display:flex;
+}      
+.content
+{
+  align-items: left;
+  justify-content: left;
+  display:flex;
+}

@@ -13,7 +13,6 @@ html{
   }
 
   body{
-      background: #302E2E;
       display: flex;
       font-family: 'NotoSerifDisplay';
       font-display: swap;
@@ -22,15 +21,17 @@ html{
       }
   
       .screen{
+    
        color: rgb(244,98,46);
       font-size: 200px;
       overflow: auto;
       text-align: center;
-      text-shadow: 4px 4px 13px rgba(207,176,162,0.6);
+      text-shadow: 10px 10px 13px rgba(207,176,162,0.6);
   }
           
  
 .container {
+
   display: flex;
   justify-content: center; 
   align-items: flex-end;  
@@ -46,7 +47,7 @@ html{
   background-color: transparent;
   border: transparent;
   position: absolute;
-  text-shadow: 4px 4px 13px rgba(207,176,162,0.6);
+  text-shadow: 10px 10px 13px rgba(207,176,162,0.6);
   margin-bottom: 550px;   
 }
 
@@ -57,6 +58,7 @@ html{
 max-width: 1000px;
 position: relative;
 margin: auto;
+margin-top: 40px;
 }
 
 /* Hide the images by default */

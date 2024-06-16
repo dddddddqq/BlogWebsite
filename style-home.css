@@ -1,7 +1,7 @@
 html{
     box-sizing: border-box;
     height: 100%;
-    
+   
     }
   
     *,
@@ -12,21 +12,44 @@ html{
        padding: 0; 
     }
 
-/* hello */
+
 
         body {
+          font-family: 'Dosis', sans-serif;
             height: 100%;
             margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #302E2E; /* Optional background color */
+           background-color: #302E2E;
         }
 
+        .top{
+          display: flex;
+          align-items: top;
+          align-items: center;
+          width: 100%;
+          height: 15%;
+          overflow:-moz-hidden-unscrollable;
+          position: relative;
+          background-image: linear-gradient(43deg, #fd5d35 0%, #fecdc2 46%, #aaaaaa 100%);
+          text-indent: 50px;
+          letter-spacing: 2px;
+          text-indent: 100px;
+          justify-content: center;
+          font-family: inherit;
+        }
+
+        .title{
+          letter-spacing: 20px;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          font-family: inherit;
+          font-size: 40px;
+          white-space: pre;
+        }
         .container {
+     
             display: flex;
             justify-content: center;
-            align-items: center;
             width: 100%;
             height: 100%;
         }
@@ -34,19 +57,20 @@ html{
         .card {
             width: 300px;
             height: 200px;
-            background-color: #4158D0;
             background-image: linear-gradient(43deg, #fd5d35 0%, #fecdc2 46%, #aaaaaa 100%);
             border-radius: 8px;
-            color: white;
             overflow: hidden;
             position: relative;
             transform-style: preserve-3d;
             perspective: 1000px;
             transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
             cursor: pointer;
+            margin-left: 50px;
+            margin-top: 50px;
         }
           
           .card-content {
+      
             padding: 20px;
             position: relative;
             z-index: 1;
@@ -58,16 +82,19 @@ html{
             justify-content: center;
             text-align: center;
             height: 100%;
+        
           }
           
           .card-content .card-title {
+            font-family: 'Dosis', sans-serif;
             font-size: 24px;
             font-weight: 700;
-            color: inherit;
+            color:whitesmoke;
             text-transform: uppercase;
           }
           
           .card-content .card-para {
+            font-family: 'Dosis', sans-serif;
             color: inherit;
             opacity: 0.8;
             font-size: 14px;
@@ -95,6 +122,7 @@ html{
           }
           
           .card:after {
+      
             content: "";
             position: absolute;
             top: 0;
