@@ -18,62 +18,144 @@ html{
         font-family: 'Dosis', sans-serif;
           height: 100%;
           margin: 0;
-         background-color: #302E2E;
+         background-image: linear-gradient(43deg, #fd5d35 0%, #fecdc2 46%, #aaaaaa 100%);
+         background-attachment: fixed; 
+         text-indent: 50px;
       }
 
-      .top{
-        display: flex;
-        align-items: top;
-        align-items: center;
-        width: 100%;
-        height: 15%;
-        overflow:-moz-hidden-unscrollable;
-        position: relative;
-        background-image: linear-gradient(43deg, #fd5d35 0%, #fecdc2 46%, #aaaaaa 100%);
-        text-indent: 50px;
-        letter-spacing: 2px;
-        text-indent: 100px;
-        justify-content: center;
-        font-family: inherit;
-      }
 
-   
-      .title{
-        letter-spacing: 20px;
-        align-items: center;
-        justify-content: center;
-        display: flex;
-        font-family: inherit;
-        font-size: 40px;
-        white-space: pre;
-      }
+/* Style the top navigation bar */
+.topnav {
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+  background-color: #A4C0C0;
 
-.items{
-  display:flex;
-  flex-direction: column;
-  background-color: #fecdc2;
-   border-radius: 12px;
-  width:95%;
+ /* background-image: linear-gradient(43deg, #fd5d35 0%, #fecdc2 46%, #aaaaaa 100%);*/
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 16px 16px ;
+  text-decoration: none;
+  text-indent: 100px;
+  letter-spacing: 2px;
+  font-family: inherit;
+  font-size: 15px;
   margin-top: 20px;
-  flex-wrap: wrap;
+}
+.logo{
+  float:left;
+  padding: 0%;
+  align-self: top;
+margin-left: 15px;
 }
 
-.image{
-  padding-top: 20px;
-  padding-left: 20px;
-  align-items: left;
-display:flex;
+.one{
+  background-color:#a59a9ab9;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right:20px;
+  border-radius: 10px;
+}
+.two{
+  background-color:#a59a9ab9;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right:20px;
+  border-radius: 10px;
+}
+.three{
+  background-color:#a59a9ab9;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right:20px;
+  border-radius: 10px;
+}
+.four{
+  background-color:#a59a9ab9;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right:20px;
+  border-radius: 10px;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddddddb9;
+  color: black;
+}
+
+
+.one:hover{
+  background-color: #f2f2f2;
+    color: black;
+   
+  }
+  .two:hover{
+    background-color: #f2f2f2;
+      color: black;
+    }
+    .three:hover{
+      background-color: #f2f2f2;
+        color: black;
+      }
+      .three:hover{
+        background-color: #f2f2f2;
+          color: black;
+        }
+        .four:hover{
+          background-color: #f2f2f2;
+            color: black;
+          }
+
+          
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 20px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 15%;
+ padding-top:20px;
+ padding-bottom:20px;
+ padding-left:20px;
+ padding-right:20px;
 
 }
 
-.name{
-  align-items: left;
-  justify-content: left;
-  display:flex;
-}      
-.content
-{
-  align-items: left;
-  justify-content: left;
-  display:flex;
+/* Middle column */
+.column.middle {
+  width: 80%;
+ 
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+@font-face {
+  font-family: 'Horizon';
+  src: url('horizon.otf');
+  font-weight: 400;
+  font-style: normal;
 }

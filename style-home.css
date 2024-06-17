@@ -19,32 +19,55 @@ html{
             height: 100%;
             margin: 0;
            background-color: #302E2E;
+         
         }
+/* Style the top navigation bar */
+.topnav {
+  width: 100%;
+  height: 20%;
+  overflow: hidden;
+  background-color: #A4C0C0;
+  text-indent: 50px;
+ /* background-image: linear-gradient(43deg, #fd5d35 0%, #fecdc2 46%, #aaaaaa 100%);*/
+}
 
-        .top{
-          display: flex;
-          align-items: top;
-          align-items: center;
-          width: 100%;
-          height: 15%;
-          overflow:-moz-hidden-unscrollable;
-          position: relative;
-          background-image: linear-gradient(43deg, #fd5d35 0%, #fecdc2 46%, #aaaaaa 100%);
-          text-indent: 50px;
-          letter-spacing: 2px;
-          text-indent: 100px;
-          justify-content: center;
-          font-family: inherit;
-        }
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #302E2E;
+  text-align: center;
+  padding: 16px 16px ;
+  text-decoration: none;
+  text-indent: 50px;
+  letter-spacing: 2px;
+  font-family: 'horizon', sans-serif;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddddddb9;
+  color: black;
+}
+.logo{
+  float:left;
+  padding: 0%;
+  align-self: top;
+margin-left: 15px;
+}
+
 
         .title{
           letter-spacing: 20px;
           align-items: center;
           justify-content: center;
           display: flex;
-          font-family: inherit;
+          font-family: horizon;
           font-size: 40px;
           white-space: pre;
+          color:#302E2E;
         }
         .container {
      
@@ -77,7 +100,7 @@ html{
             display: flex;
             flex-direction: column;
             gap: 10px;
-            color: white;
+            color:#302E2E;
             align-items: center;
             justify-content: center;
             text-align: center;
@@ -86,10 +109,10 @@ html{
           }
           
           .card-content .card-title {
-            font-family: 'Dosis', sans-serif;
-            font-size: 24px;
+            font-family: 'Horizon', sans-serif;
+            font-size: 20px;
             font-weight: 700;
-            color:whitesmoke;
+            color:#302E2E;
             text-transform: uppercase;
           }
           
@@ -142,4 +165,9 @@ html{
           
           
           
-          
+          @font-face {
+            font-family: 'Horizon';
+            src: url('horizon.otf');
+            font-weight: 400;
+            font-style: normal;
+          }
